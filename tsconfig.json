@@ -1,5 +1,6 @@
 {
   "include": [
+    "esbuild.config.mjs",
     "index.ts",
     "lib/**/*"
   ],

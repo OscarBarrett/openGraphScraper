@@ -1,26 +1,27 @@
 {
   "name": "open-graph-scraper",
   "description": "Node.js scraper module for Open Graph and Twitter Card info",
-  "version": "6.8.2",
+  "version": "6.9.0-alpha.0",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
   "types": "./types/index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./types/index.d.ts",
-      "import": "./dist/esm/index.js",
+      "import": "./dist/esm/index.mjs",
       "require": "./dist/cjs/index.js"
     },
     "./types": "./types/lib/types.d.ts"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --outDir dist/cjs/",
-    "build:declaration": "tsc --project tsconfig.declaration.json --module node16 --moduleResolution node16",
-    "build:esm": "tsc --project tsconfig.build.json --module node16 --moduleResolution node16 --outDir dist/esm/",
+    "build:declaration": "tsc --project tsconfig.declaration.json",
+    "build:esm": "node esbuild.config.mjs",
     "build": "rm -rf dist/ && npm run build:cjs && npm run build:esm",
     "ci": "npm run eslint && npm run build && npm run build:declaration && npm run test",
-    "eslint:fix": "eslint . --ext .js,.ts --fix",
-    "eslint": "eslint . --ext .js,.ts",
+    "eslint:fix": "eslint . --ext .js,.mjs,.ts --fix",
+    "eslint": "eslint . --ext .js,.mjs,.ts",
     "mocha:int": "ts-mocha --recursive \"./tests/integration/**/*.spec.ts\" --timeout 10000",
     "mocha:unit": "nyc --reporter=html --reporter=text --exclude=tests/ ts-mocha --recursive \"./tests/unit/**/*.spec.ts\"",
     "prepare": "npm run snyk-protect && npm run build",
@@ -54,6 +55,7 @@
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "chai": "^4.5.0",
+    "esbuild": "^0.24.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",

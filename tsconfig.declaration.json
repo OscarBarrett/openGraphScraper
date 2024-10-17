@@ -12,9 +12,11 @@
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2023"],
+    "lib": ["ESNext"],
+    "module": "Preserve",
+    "moduleResolution": "Bundler",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2022",
+    "target": "ESNext",
   }
 }
