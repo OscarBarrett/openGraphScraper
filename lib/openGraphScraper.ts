@@ -1,13 +1,13 @@
-import extractMetaTags from './extract';
-import requestAndResultsFormatter from './request';
+import extractMetaTags from './extract.js';
+import requestAndResultsFormatter from './request.js';
 import {
   defaultUrlValidatorSettings,
   isCustomMetaTagsValid,
   isThisANonHTMLUrl,
   optionSetup,
   validateAndFormatURL,
-} from './utils';
-import type { OpenGraphScraperOptions } from './types';
+} from './utils.js';
+import type { OpenGraphScraperOptions } from './types.js';
 
 /**
  * sets up options for the fetch request and calls extract on html

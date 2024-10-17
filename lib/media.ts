@@ -1,5 +1,5 @@
-import fields from './fields';
-import { removeNestedUndefinedValues } from './utils';
+import fields from './fields.js';
+import { removeNestedUndefinedValues } from './utils.js';
 import type {
   ImageObject,
   MusicSongObject,
@@ -7,7 +7,7 @@ import type {
   TwitterImageObject,
   TwitterPlayerObject,
   VideoObject,
-} from './types';
+} from './types.js';
 
 const mediaMapperTwitterImage = (item: TwitterImageObject[]) => ({
   alt: item[3],

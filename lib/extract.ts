@@ -1,9 +1,9 @@
 import { load } from 'cheerio';
 
-import fallback from './fallback';
-import fields from './fields';
-import mediaSetup from './media';
-import { unescapeScriptText } from './utils';
+import fallback from './fallback.js';
+import fields from './fields.js';
+import mediaSetup from './media.js';
+import { unescapeScriptText } from './utils.js';
 
 import type { OgObjectInternal, OpenGraphScraperOptions } from './types';
 

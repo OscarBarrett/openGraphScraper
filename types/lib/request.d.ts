@@ -1,4 +1,4 @@
-import type { OpenGraphScraperOptions } from './types';
+import type { OpenGraphScraperOptions } from './types.js';
 /**
  * performs the fetch request and formats the body for ogs
  *

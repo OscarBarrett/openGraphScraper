@@ -1,5 +1,5 @@
 import type { CheerioAPI } from 'cheerio';
-import type { OpenGraphScraperOptions, OgObjectInternal } from './types';
+import type { OpenGraphScraperOptions, OgObjectInternal } from './types.js';
 /**
  * ogs fallbacks
  *

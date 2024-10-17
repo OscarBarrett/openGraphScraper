@@ -1,4 +1,4 @@
-import type { OpenGraphScraperOptions } from './types';
+import type { OpenGraphScraperOptions } from './types.js';
 /**
  * sets up options for the fetch request and calls extract on html
  *
@@ -7,13 +7,13 @@ import type { OpenGraphScraperOptions } from './types';
  *
  */
 export default function setOptionsAndReturnOpenGraphResults(ogsOptions: OpenGraphScraperOptions): Promise<{
-    ogObject: import("./types").OgObjectInternal;
+    ogObject: import("./types.js").OgObjectInternal;
     response: {
         body: string;
     };
     html: string;
 } | {
-    ogObject: import("./types").OgObjectInternal;
+    ogObject: import("./types.js").OgObjectInternal;
     response: import("undici").Response;
     html: string;
 }>;

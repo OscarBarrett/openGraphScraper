@@ -8,13 +8,16 @@
     "tests/**/*"
   ],
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2023"],
-    "module": "node16",
-    "moduleResolution": "node16",
+    "lib": ["ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2022",
+    "target": "ESNext",
   }
 }

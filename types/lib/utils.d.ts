@@ -1,4 +1,4 @@
-import type { CustomMetaTags, OgObjectInternal, OpenGraphScraperOptions, ValidatorSettings } from './types';
+import type { CustomMetaTags, OgObjectInternal, OpenGraphScraperOptions, ValidatorSettings } from './types.js';
 export declare const defaultUrlValidatorSettings: {
     allow_fragments: boolean;
     allow_protocol_relative_urls: boolean;

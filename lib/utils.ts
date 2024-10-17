@@ -1,10 +1,10 @@
-import isUrl from './isUrl';
+import isUrl from './isUrl.js';
 import type {
   CustomMetaTags,
   OgObjectInternal,
   OpenGraphScraperOptions,
   ValidatorSettings,
-} from './types';
+} from './types.js';
 
 export const defaultUrlValidatorSettings = {
   allow_fragments: true,

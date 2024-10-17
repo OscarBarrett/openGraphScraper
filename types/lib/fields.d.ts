@@ -1,4 +1,4 @@
-import type { OgObjectInternal } from './types';
+import type { OgObjectInternal } from './types.js';
 type Fields = {
     multiple: boolean;
     property: string;

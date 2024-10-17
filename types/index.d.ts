@@ -1,4 +1,4 @@
-import type { ErrorResult, OpenGraphScraperOptions, SuccessResult } from './lib/types';
+import type { ErrorResult, OpenGraphScraperOptions, SuccessResult } from './lib/types.js';
 /**
  * `open-graph-scraper` uses [fetch](https://developer.mozilla.org/en-US/docs/Web/API/fetch) for http requests
  * for scraping Open Graph and Twitter Card info off a website.
@@ -16,4 +16,4 @@ import type { ErrorResult, OpenGraphScraperOptions, SuccessResult } from './lib/
  * @returns {Promise} Promise Object with the Open Graph results
  */
 declare function run(options: OpenGraphScraperOptions): Promise<ErrorResult | SuccessResult>;
-export = run;
+export default run;

@@ -1,10 +1,10 @@
 /* eslint-disable import/no-import-module-exports */
-import setOptionsAndReturnOpenGraphResults from './lib/openGraphScraper';
+import setOptionsAndReturnOpenGraphResults from './lib/openGraphScraper.js';
 import type {
   ErrorResult,
   OpenGraphScraperOptions,
   SuccessResult,
-} from './lib/types';
+} from './lib/types.js';
 
 /**
  * `open-graph-scraper` uses [fetch](https://developer.mozilla.org/en-US/docs/Web/API/fetch) for http requests
@@ -51,4 +51,4 @@ async function run(options: OpenGraphScraperOptions): Promise<ErrorResult | Succ
   return returnSuccess;
 }
 
-export = run;
+export default run;

@@ -2,7 +2,7 @@ import { fetch } from 'undici';
 import { decode } from 'iconv-lite';
 import { CheerioAPI, load } from 'cheerio';
 import chardet from 'chardet';
-import type { OpenGraphScraperOptions } from './types';
+import type { OpenGraphScraperOptions } from './types.js';
 
 /**
  * checks if an element exists

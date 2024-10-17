@@ -1,4 +1,4 @@
-import type { OgObjectInternal } from './types';
+import type { OgObjectInternal } from './types.js';
 /**
  * formats the multiple media values
  *
